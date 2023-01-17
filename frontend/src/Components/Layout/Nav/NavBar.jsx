@@ -11,8 +11,9 @@ function NavBar() {
     //     </ul>
     // </nav>
 
-    <div className="container mx-auto w-full border">
-      <p class="text-primary text-lg">Hello</p>
+    <div className="border d-flex align-center">
+      <p>Sign in</p>
+      <p>Register</p>
     </div>
   );
 }

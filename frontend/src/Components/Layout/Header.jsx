@@ -1,4 +1,4 @@
-import React from 'react';
+import Navbar from './Nav/NavBar';
 
 const Header = () => {
   const content = (
@@ -12,10 +12,7 @@ const Header = () => {
           <p>MedicareAbout Us</p>
         </div>
         <div className="border">search</div>
-        <div className="border d-flex align-center">
-          <p>Sign in</p>
-          <p>Register</p>
-        </div>
+        <Navbar />
       </div>
     </div>
   );
