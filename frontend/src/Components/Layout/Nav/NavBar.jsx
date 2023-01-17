@@ -3,13 +3,15 @@ import NavItem from './NavItem'
 
 function NavBar() {
     return (
-        //         <NavItem to="/about">About</NavItem>
-        // <nav className="nav">
-        //     <Link to="/">App Name</Link>
-        //     <ul>
-        // </nav>
-        //         <NavItem to="/auth/login">Log In</NavItem>
-        //     </ul>
+        <nav className="nav">
+            <Link to="/">App Name</Link>
+            <ul>
+                <NavItem to="/about">About</NavItem>
+                <NavItem to="/auth/login">Log In</NavItem>
+            </ul>
+        </nav>
+                
+            
     )
 }
 
