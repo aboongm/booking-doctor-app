@@ -19,7 +19,7 @@ const Header = () => {
   const content = (
     <div className="container mx-auto border bg-gray d-flex align-items-center justify-content-center">
       <div className="border flex-grow-1">logo</div>
-      <div className="d-flex align-center justify-content-between">
+      <div className="d-flex align-items-center justify-content-between">
         <div>
           <form
             className="search-form  d-none mr-lg d-flex align-items-center justify-content-center"
@@ -46,17 +46,20 @@ const Header = () => {
             </div>
           </form>
         </div>
-        <div className="border d-flex " id="navLinks">
-          <p>What We Treat</p>
-          <p>Solutions</p>
-          <p>Medicare</p>
-          <p>MedicareAbout Us</p>
+        <div
+          className="border d-flex align-items-center text-black"
+          id="navLinks"
+        >
+          <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6">What We Treat</p>
+          <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6">Solutions</p>
+          <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6">Medicare</p>
+          <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6">About Us</p>
         </div>
-        <div className="border" id="searchIcon" onClick={handleSearchIcon}>
+        <div className="px-4" id="searchIcon" onClick={handleSearchIcon}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="24"
+            height="24"
             fill="currentColor"
             class="bi bi-search"
             viewBox="0 0 16 16"
