@@ -22,7 +22,10 @@ function Home() {
                     </p>
                 </div>
                 <div>
-                    <p>See A Doctor Now</p>
+                    <Link>
+                        <p>See A Doctor Now</p>
+                    </Link>
+
                     {/* This is supposed to be a Link but for some reason the Link component isn't working */}
                 </div>
                 <div>
