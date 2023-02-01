@@ -57,7 +57,7 @@ function Home() {
                 </div>
                 <div>
                     <div>
-                        <Link>
+                        <Link to="/">
                             <h3>Cold & Flue</h3>
                         </Link>
                         <ul>
@@ -106,7 +106,7 @@ function Home() {
                         </ul>
                     </div>
                     <div>
-                        <Link>
+                        <Link to="/">
                             <h3>Allergies</h3>
                         </Link>
                         <ul>
