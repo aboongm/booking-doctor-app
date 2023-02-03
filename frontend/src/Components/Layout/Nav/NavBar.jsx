@@ -1,5 +1,5 @@
 import NavItem from './NavItem';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -11,9 +11,13 @@ function NavBar() {
     //     </ul>
     // </nav>
 
-    <div className="border d-flex align-center">
-      <Link to='/auth/login'>Log in</Link>
-      <Link to='/auth/signup'>Register</Link>
+    <div className="d-flex align-items-end justify-content-center">
+      <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6">Sign in</p>
+      <div className="m-0 p-0 bg-primary">
+        <p className="mx-0 mb-0 mt-1 px-3 pt-2 pb-3 h6 text-white font-bold">
+          Register
+        </p>
+      </div>
     </div>
   );
 }
