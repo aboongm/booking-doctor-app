@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 class Users::SessionsController < Devise::SessionsController
- respond_to :json
+  respond_to :json
 
   private
 
@@ -9,9 +7,9 @@ class Users::SessionsController < Devise::SessionsController
     # jwt_payload = JWT.encode(resource.jwt_payload, Rails.application.credentials.fetch(:secret_key_base))
     jwt_payload = JWT.encode({ sub: resource.id }, Rails.application.credentials.fetch(:secret_key_base))
     render json: {
-      status: { 
-        message: 'Successfully logged in', 
-        code: 200, 
+      status: {
+        message: 'Successfully logged in',
+        code: 200,
         data: current_user,
         accessToken: jwt_payload
       }
@@ -19,7 +17,8 @@ class Users::SessionsController < Devise::SessionsController
   end
 
   def respond_to_on_destroy
-    jwt_payload = JWT.decode(request.headers['Authorization'].split(' ')[1], Rails.application.credentials.fetch(:secret_key_base)).first
+    jwt_payload = JWT.decode(request.headers['Authorization'].split[1],
+                             Rails.application.credentials.fetch(:secret_key_base)).first
 
     # debugger
 
