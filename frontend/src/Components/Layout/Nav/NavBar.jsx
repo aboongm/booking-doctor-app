@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import NavItem from './NavItem';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
