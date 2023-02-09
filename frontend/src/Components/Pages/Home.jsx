@@ -1,33 +1,42 @@
 import { Link } from "react-router-dom";
 import Hero from "../Layout/Hero";
+import picture from "../../assets/woman-on-phone-with-doctor-on-demand-1200x1200.jpg";
 
 function Home() {
     return (
         <div>
             <Hero />
-            <div>
-                <div>
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    <h1>
-                        Is it the Flu?
-                        <br /> Don't wait to feel
-                        <br /> better.
-                    </h1>
-                    <p>
-                        Get the right care for your family, right away. Get 24/7
-                        access to top-rated doctors with Doctor On Demand by
-                        Included Health.
-                    </p>
-                </div>
-                <div>
-                    <p>See A Doctor Now</p>
-                    {/* This is supposed to be a Link but for some reason the Link component isn't working */}
-                </div>
-                <div>
-                    <p>Sign In</p>
-                    {/* Same as above */}
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img className="" src={picture} alt="" />
+                    </div>
+                    <div className="col">
+                        <div>
+                            <h1>
+                                Is it the Flu?
+                                <br /> Don't wait to feel
+                                <br /> better.
+                            </h1>
+                            <p>
+                                Get the right care for your family, right away.
+                                Get 24/7 access to top-rated doctors with Doctor
+                                On Demand by Included Health.
+                            </p>
+                        </div>
+                        <div>
+                            <Link to="/">
+                                <p>See A Doctor Now</p>
+                            </Link>
+
+                            {/* This is supposed to be a Link but for some reason the Link component isn't working */}
+                        </div>
+                        <div>
+                            <Link to="/">
+                                <p>Sign In</p>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -37,8 +46,9 @@ function Home() {
                         where it works for you.
                     </p>
                 </div>
-                <div>Online Therapy </div>
-                {/* Needs arrow link */}
+                <Link to="/">
+                    <div>Online Therapy </div>
+                </Link>
             </div>
 
             <div>
@@ -46,14 +56,15 @@ function Home() {
                     <h2>We're Here For You</h2>
                     <p>
                         Meet with an urgent care doctor in minutes. Schedule a
-                        session with a therapist or psychiatrist this week.
+                        session with a{" "}
+                        <Link to="/">therapist or psychiatrist</Link> this week.
                     </p>
-                    {/* "therapist or psychiatrist" needs to be a link */}
                 </div>
                 <div>
                     <div>
-                        <h3>Cold & Flue</h3>
-                        {/* Needs to be a link */}
+                        <Link to="/">
+                            <h3>Cold & Flue</h3>
+                        </Link>
                         <ul>
                             <li>Cough</li>
                             <li>Headaches</li>
@@ -71,7 +82,9 @@ function Home() {
                         </ul>
                     </div>
                     <div>
-                        <h3>Mental Health</h3>
+                        <Link to="/">
+                            <h3>Mental Health</h3>
+                        </Link>
                         <ul>
                             <li>Anxiety</li>
                             <li>Depression</li>
@@ -98,7 +111,9 @@ function Home() {
                         </ul>
                     </div>
                     <div>
-                        <h3>Allergies</h3>
+                        <Link to="/">
+                            <h3>Allergies</h3>
+                        </Link>
                         <ul>
                             <li>Seasonal Allergies</li>
                             <li>Epipen refills</li>
