@@ -6,34 +6,39 @@ function Home() {
     return (
         <div>
             <Hero />
-            <div className="container">
+            <div className="container mx-auto">
                 <div className="row">
-                    <div className="col">
-                        <img className="" src={picture} alt="" />
+                    <div className="col m-0 p-0">
+                        <img className="w-100 m-0 p-0" src={picture} alt="" />
                     </div>
-                    <div className="col">
-                        <div>
-                            <h1>
-                                Is it the Flu?
-                                <br /> Don't wait to feel
-                                <br /> better.
-                            </h1>
+                    <div className="col m-0 d-flex flex-column align-items-center justify-content-between">
+                        <div className="bg-dod-blue text-white p-5">
+                            <div className="dod-hero-text">
+                                <p className="text-white m-0">
+                                    Need to see a doctor now?
+                                </p>
+                                <p className="m-0">
+                                    You've come to the right place.
+                                </p>
+                            </div>
                             <p>
-                                Get the right care for your family, right away.
-                                Get 24/7 access to top-rated doctors with Doctor
-                                On Demand by Included Health.
+                                Doctor On Demand offers 24-hour urgent care and
+                                online therapy appointments in days. Telehealth
+                                you can trust.
                             </p>
                         </div>
-                        <div>
+                        <div className="w-100">
                             <Link to="/">
-                                <p>See A Doctor Now</p>
+                                <p className="w-100 text-center h5 p-4 border">
+                                    Start a virtual doctor visit
+                                </p>
                             </Link>
-
-                            {/* This is supposed to be a Link but for some reason the Link component isn't working */}
                         </div>
-                        <div>
+                        <div className="w-100">
                             <Link to="/">
-                                <p>Sign In</p>
+                                <p className="bg-dod-blue text-white w-100 text-center h5 p-4">
+                                    Book online therapy or psychiatry
+                                </p>
                             </Link>
                         </div>
                     </div>
