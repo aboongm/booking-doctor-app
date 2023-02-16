@@ -47,6 +47,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="container mx-auto">
                 <div className="row">
                     <div className="col text-start">
                         <p>
@@ -60,8 +63,10 @@ function Home() {
                         </Link>
                     </div>
                 </div>
-                {/* WE'RE HERE FOR YOU */}
+            </div>
+            {/* WE'RE HERE FOR YOU */}
 
+            <div className="container mx-auto">
                 <div className="row">
                     <div className="col">
                         <h2>We're Here For You</h2>
@@ -75,10 +80,12 @@ function Home() {
                         </p>
                     </div>
 
-                    <div className="row">
-                        <div className="col-md-4">
+                    <div className="row gap-5">
+                        <div className="col-md-4 card card-width">
                             <Link to="/">
-                                <h3>Cold & Flue</h3>
+                                <h3 className="card-title card-link">
+                                    Cold & Flue
+                                </h3>
                             </Link>
                             <ul>
                                 <li>Cough</li>
@@ -87,7 +94,7 @@ function Home() {
                                 <li>Fever</li>
                             </ul>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 card card-width">
                             <h3>Skin Conditions</h3>
                             <ul>
                                 <li>Acne</li>
@@ -96,7 +103,7 @@ function Home() {
                                 <li>Sunburn</li>
                             </ul>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 card card-width">
                             <Link to="/">
                                 <h3>Mental Health</h3>
                             </Link>
@@ -108,7 +115,7 @@ function Home() {
                             </ul>
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-md-4 card card-width">
                             <h3>Headaches</h3>
                             <ul>
                                 <li>Migraines</li>
@@ -117,7 +124,7 @@ function Home() {
                                 <li>Nausea</li>
                             </ul>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 card card-width">
                             <h3>Everyday Care</h3>
                             <ul>
                                 <li>UTIs</li>
@@ -126,7 +133,7 @@ function Home() {
                                 <li>Joint pain</li>
                             </ul>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 card card-width">
                             <Link to="/">
                                 <h3>Allergies</h3>
                             </Link>
@@ -138,83 +145,76 @@ function Home() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div className="row">
-                        <div className="col">
-                            <h3>Get the app</h3>
-                            <p>Download Doctor On Demand today</p>
-                        </div>
-                        <div className="col">
-                            <div>
-                                <Link to="/">
-                                    <img src={appStore} alt="" />
-                                </Link>
-                                <Link to="/">
-                                    <img src={googlePlay} alt="" />
-                                </Link>
-                                <div>
-                                    <p>4.9</p>
-                                    <p>105.7K Ratings</p>
-                                </div>
-                            </div>
+            <div className="row bg-dod-blue">
+                <div className="col">
+                    <h3>Get the app</h3>
+                    <p>Download Doctor On Demand today</p>
+                </div>
+                <div className="col">
+                    <div>
+                        <Link to="/">
+                            <img src={appStore} alt="" />
+                        </Link>
+                        <Link to="/">
+                            <img src={googlePlay} alt="" />
+                        </Link>
+                        <div>
+                            <p>4.9</p>
+                            <p>105.7K Ratings</p>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div className="row">
-                        <div className="col">
-                            <p>
-                                Telehealth appointments & mental health services
-                            </p>
-                            <h3>Total Virtual Care</h3>
-                            <p>
-                                With 24/7 access to online doctors,
-                                psychiatrists, psychologists, therapists and
-                                other medical experts, care is always available,
-                                anytime and anywhere. Select and see your
-                                favorite providers again and again, right from
-                                your smartphone, tablet or computer.
-                            </p>
-                            <p>
-                                Better yet, Doctor On Demand is a covered
-                                benefit for over 98 million Americans by their
-                                health plan or employer. It's free to sign up
-                                and easy to check your coverage when you
-                                register.
-                            </p>
+            <div className="row">
+                <div className="col">
+                    <p>Telehealth appointments & mental health services</p>
+                    <h3>Total Virtual Care</h3>
+                    <p>
+                        With 24/7 access to online doctors, psychiatrists,
+                        psychologists, therapists and other medical experts,
+                        care is always available, anytime and anywhere. Select
+                        and see your favorite providers again and again, right
+                        from your smartphone, tablet or computer.
+                    </p>
+                    <p>
+                        Better yet, Doctor On Demand is a covered benefit for
+                        over 98 million Americans by their health plan or
+                        employer. It's free to sign up and easy to check your
+                        coverage when you register.
+                    </p>
 
-                            <Link to="/">
-                                <button
-                                    type="button"
-                                    className="btn btn-outline-primary rounded-0"
-                                >
-                                    Get started
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="col">
-                            <img src={onlineMeeting} alt="" />
-                        </div>
-                    </div>
+                    <Link to="/">
+                        <button
+                            type="button"
+                            className="btn btn-outline-primary rounded-0"
+                        >
+                            Get started
+                        </button>
+                    </Link>
+                </div>
+                <div className="col">
+                    <img src={onlineMeeting} alt="" />
+                </div>
+            </div>
 
-                    <div className="row">
-                        <div className="col">
-                            <img src={useCare} alt="" />
-                        </div>
-                        <div className="col">
-                            <div>
-                                <h2>
-                                    Personalized care for your mind and body.
-                                </h2>
-                                <p>
-                                    From rashes to colds, stress management to
-                                    diabetes management, individual treatment
-                                    plans are created around you. Our medical
-                                    and mental health providers work together,
-                                    keeping your personal journey protected and
-                                    connected.
-                                </p>
-                            </div>
-                        </div>
+            <div className="row">
+                <div className="col">
+                    <img src={useCare} alt="" />
+                </div>
+                <div className="col">
+                    <div>
+                        <h2>Personalized care for your mind and body.</h2>
+                        <p>
+                            From rashes to colds, stress management to diabetes
+                            management, individual treatment plans are created
+                            around you. Our medical and mental health providers
+                            work together, keeping your personal journey
+                            protected and connected.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -9,3 +9,8 @@ font-weight: bold;
 line-height: 65px;
 letter-spacing: -2px;
 }
+
+.card-width {
+  width: 320px !important;
+}
+
