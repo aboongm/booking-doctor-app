@@ -14,3 +14,7 @@ letter-spacing: -2px;
   width: 320px !important;
 }
 
+.max-width {
+	max-width: 1156px;
+	margin: 0 auto;
+}

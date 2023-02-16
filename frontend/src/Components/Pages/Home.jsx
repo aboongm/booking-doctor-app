@@ -10,7 +10,7 @@ function Home() {
     return (
         <div>
             <Hero />
-            <div className="container mx-auto">
+            <div className="container mx-auto max-width">
                 <div className="row">
                     <div className="col m-0 p-0">
                         <img className="w-100 m-0 p-0" src={picture} alt="" />
