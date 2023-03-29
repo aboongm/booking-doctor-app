@@ -8,7 +8,7 @@ import useCare from "../../assets/use-care-img.jpg";
 
 function Home() {
     return (
-        <div>
+        <div className="bg-slate-100">
             <Hero />
             <div className="container mx-auto max-width">
                 <div className="row">
