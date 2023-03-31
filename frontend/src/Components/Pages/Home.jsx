@@ -13,13 +13,13 @@ function Home() {
       <div className="container mx-auto max-width border-2 border-red-500 p-0">
         <div className="grid md:grid-cols-2 bg-red-500">
           <div className="col m-0 p-0">
-            <img className="w-full m-0 p-0" src={picture} alt="" />
+            <img className="object-cover h-full m-0 p-0" src={picture} alt="" />
           </div>
           <div className=" m-0 d-flex flex-column align-items-center justify-content-between">
             <div className="bg-dod-blue text-white p-5">
               <div className="dod-hero-text">
-                <p className="text-white m-0">Need to see a doctor now?</p>
-                <p className="m-0">You've come to the right place.</p>
+                <p className="text-white text-4xl m-0">Need to see a doctor now?</p>
+                <p className="m-0 text-4xl">You've come to the right place.</p>
               </div>
               <p>
                 Doctor On Demand offers 24-hour urgent care and online therapy
